@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind (Browser/CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- LightGallery CSS (you can remove if unused) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>UsArtCraft</title>
+
+    <style>
+      .font-playfair {
+        font-family: 'Playfair Display', serif;
+        font-optical-sizing: auto;
+      }
+      .font-chivo {
+        font-family: 'Chivo', sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+  </head>
+
+  <body class="font-playfair">
+    <!-- Header -->
+    <header class="bg-[#9C5E3F] font-chivo !font-light">
+      <h5
+        class="text-[10px] text-white py-1 text-center uppercase tracking-wide border-b-[0.5px] border-white/50 border-dashed"
+      >
+        Shop our newest collection
+      </h5>
+      <div class="flex items-center *:w-1/3 px-2.5 text-white py-2.5">
+        <div class="text-xs space-x-1.5">
+          <div>
+            <span class="text-lg"><i class="ri-menu-2-line"></i></span>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center uppercase w-fit mx-auto tracking-wider gap-1">
+            <img src="/images/logo.jpg" alt="logo" class="w-8 h-8 rounded-full" />
+            <h4 class="text-[14px] font-extralight">usartcraft</h4>
+          </div>
+        </div>
+        <ul class="flex items-center gap-2 justify-end text-white/90 text-lg">
+          <li><i class="ri-instagram-fill"></i></li>
+          <li><i class="ri-youtube-fill"></i></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Banner -->
+      <section class="bg-[#F7EEE5]">
+        <!-- Image -->
+        <div
+          class="relative [clip-path:polygon(0_0,_100%_0%,_100%_80%,_80%_90%,_0_80%)] before:content-[''] before:absolute before:bg-[#9C5E3F] before:w-full before:h-full before:-bottom-5 z-10 before:-z-10 h-72 overflow-hidden"
+        >
+          <img
+            src="/images/banner.webp"
+            alt="hero_banner"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Text -->
+        <div class="px-3.5 pb-5 space-y-2.5">
+          <h2 class="uppercase tracking-wide text-xl font-chivo font-extralight">
+            Here art meets reality
+          </h2>
+          <p>
+            We turn imagination into reality with art that speaks, inspires, and lasts
+            forever
+          </p>
+          <button class="bg-[#9C5E3F] text-white px-4 py-2 mt-2.5">Subscribe</button>
+        </div>
+      </section>
+
+      <!-- Best Seller (Carousel) -->
+      <section class="py-5 space-y-4">
+        <h2 class="text-[#9C5E3F] text-lg font-chivo text-center">Best Seller</h2>
+
+        <!-- Slider Container -->
+        <div class="relative flex gap-2.5 text-center">
+          <div class="swiper w-full">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide space-y-3 lg:space-y-5">
+                <div class="w-full shadow-xl shadow-black/10">
+                  <img
+                    src="/images/bs-1.jpg"
+                    alt="Sylvan Drops"
+                    loading="lazy"
+                    class="w-full object-cover"
+                  />
+                </div>
+                <h3 class="uppercase font-chivo text-[#9C5E3F]">sylvan drops</h3>
+                <h4 class="tracking-wider font-chivo">$179/-</h4>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide space-y-3 lg:space-y-5">
+                <div class="w-full shadow-xl shadow-black/10">
+                  <img
+                    src="/images/bs-2.jpg"
+                    alt="Sylvan Drops"
+                    loading="lazy"
+                    class="w-full object-cover"
+                  />
+                </div>
+                <h3 class="uppercase font-chivo text-[#9C5E3F]">sylvan drops</h3>
+                <h4 class="tracking-wider font-chivo">$179/-</h4>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide space-y-3 lg:space-y-5">
+                <div class="w-full shadow-xl shadow-black/10">
+                  <img
+                    src="/images/bs-3.jpg"
+                    alt="Sylvan Drops"
+                    loading="lazy"
+                    class="w-full object-cover"
+                  />
+                </div>
+                <h3 class="uppercase font-chivo text-[#9C5E3F]">sylvan drops</h3>
+                <h4 class="tracking-wider font-chivo">$179/-</h4>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="swiper-slide space-y-3 lg:space-y-5">
+                <div class="w-full shadow-xl shadow-black/10">
+                  <img
+                    src="/images/bs-4.jpg"
+                    alt="Sylvan Drops"
+                    loading="lazy"
+                    class="w-full object-cover"
+                  />
+                </div>
+                <h3 class="uppercase font-chivo text-[#9C5E3F]">sylvan drops</h3>
+                <h4 class="tracking-wider font-chivo">$179/-</h4>
+              </div>
+
+              <!-- Slide 1 -->
+              <div class="swiper-slide space-y-3 lg:space-y-5">
+                <div class="w-full shadow-xl shadow-black/10">
+                  <img
+                    src="/images/bs-1.jpg"
+                    alt="Sylvan Drops"
+                    loading="lazy"
+                    class="w-full object-cover"
+                  />
+                </div>
+                <h3 class="uppercase font-chivo text-[#9C5E3F]">sylvan drops</h3>
+                <h4 class="tracking-wider font-chivo">$179/-</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button
+            class="custom-prev text-lg absolute right-14 bottom-[152px] z-10 w-8 h-8 cursor-pointer bg-white/50 text-[#9C5E3F] lg:top-14 lg:right-[84px] lg:w-11 lg:h-11 lg:border-[0.5px] lg:border-[#9C5E3F] flex items-center justify-center"
+            aria-label="Previous"
+          >
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+
+          <button
+            class="custom-next absolute right-5 bottom-[152px] z-10 w-8 h-8 cursor-pointer bg-white/50 text-[#9C5E3F] lg:top-14 lg:right-6 lg:w-11 lg:h-11 lg:border-[0.5px] lg:border-[#9C5E3F] flex items-center justify-center"
+            aria-label="Next"
+          >
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+
+        <div>
+          <p class="text-white font-chivo px-4 py-2 bg-[#9C5E3F] w-fit mx-auto text-sm">
+            Please contact to buy usartcrafts@gmail.com
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Philosophy -->
+      <section class="grid gap-4 p-3 md:grid-cols-2 md:items-center bg-[#F7EEE5] py-5">
+        <div>
+          <img
+            src="/images/our-philosphy.jpg"
+            alt="our-philosophy"
+            class="w-full h-auto"
+          />
+        </div>
+        <div class="space-y-2">
+          <h2 class="text-xl font-chivo text-[#9C5E3F]">Our Philosophy</h2>
+          <p>
+            Art is not just created—it is felt, shared, and lived. Our philosophy is to
+            craft pieces that connect hearts and inspire minds
+          </p>
+        </div>
+      </section>
+
+      <!-- Follow Us -->
+      <section class="p-3 space-y-2 text-center">
+        <h2 class="text-xl font-chivo text-[#9C5E3F]">Follow Us</h2>
+        <h4 class="font-chivo">@usartcraft</h4>
+
+        <!-- 👇 lightGallery Container -->
+        <ul id="lightgallery" class="flex gap-2">
+          <li data-src="/images/f-1.jpg">
+            <img
+              src="/images/f-1.jpg"
+              alt="Instagram 1"
+              class="w-full h-auto cursor-pointer"
+            />
+          </li>
+          <li data-src="/images/f-2.jpg">
+            <img
+              src="/images/f-2.jpg"
+              alt="Instagram 2"
+              class="w-full h-auto cursor-pointer"
+            />
+          </li>
+          <li data-src="/images/f-3.jpg">
+            <img
+              src="/images/f-3.jpg"
+              alt="Instagram 3"
+              class="w-full h-auto cursor-pointer"
+            />
+          </li>
+          <li data-src="/images/f-4.jpg">
+            <img
+              src="/images/f-4.jpg"
+              alt="Instagram 4"
+              class="w-full h-auto cursor-pointer"
+            />
+          </li>
+          <li data-src="/images/f-5.jpg">
+            <img
+              src="/images/f-5.jpg"
+              alt="Instagram 4"
+              class="w-full h-auto cursor-pointer"
+            />
+          </li>
+          <li data-src="/images/f-6.jpg">
+            <img
+              src="/images/f-6.jpg"
+              alt="Instagram 4"
+              class="w-full h-auto cursor-pointer"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-[#F7EEE5] grid gap-6 md:grid-cols-2">
+      <div class="space-y-3">
+        <img src="/images/logo-2.png" alt="logo" class="w-12 h-12" />
+        <p>
+          Art is not just created—it is felt, shared, and lived. Our philosophy is to
+          craft pieces that connect hearts and inspire minds
+        </p>
+        <div class="flex gap-2">
+          <button class="underline">Home</button>
+          <button class="underline">About Us</button>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <h3 class="text-[#9C5E3F] font-chivo">Subscribe</h3>
+        <form action="#">
+          <div class="flex">
+            <input type="email" placeholder="Email address" class="border p-2 w-full" />
+            <button class="bg-[#9C5E3F] text-white px-3">Go</button>
+          </div>
+        </form>
+        <div class="flex gap-2">
+          <button class="text-xl"><i class="ri-instagram-fill"></i></button>
+          <button class="text-xl"><i class="ri-youtube-fill"></i></button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS (load BEFORE your init) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+
+    <!-- LightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        lightGallery(document.getElementById('lightgallery'), {
+          selector: 'li',
+          plugins: [lgZoom, lgThumbnail],
+          speed: 500,
+          download: false,
+          licenseKey: '0000-0000-000-0000',
+          controls: true,
+          loop: true,
+          escKey: true,
+          slideEndAnimation: true,
+        });
+      });
+    </script>
+
+    <!-- Swiper Initialization -->
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          keyboard: { enabled: true },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          navigation: {
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
+          },
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1440: { slidesPerView: 4 },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
