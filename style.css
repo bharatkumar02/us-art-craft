@@ -1,0 +1,16 @@
+.wp-block-woocommerce-cart {
+    background-color: #bd927c;
+    border-radius: 5px;
+}
+
+ins{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+del{
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 700;
+
+}
